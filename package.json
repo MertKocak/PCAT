@@ -1,0 +1,17 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "photo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "photo"
+  ],
+  "author": "mertkocak",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.3.3"
+  }
+}

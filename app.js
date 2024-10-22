@@ -9,10 +9,14 @@ const pageController = require("./controllers/pageControllers")
 const app = express();
 
 //connect db
-mongoose.connect("mongodb+srv://mertkocak:Lz7cLqOvMLbmu6hH@cluster0.j3clx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+mongoose.connect("mongodb+srv://mertkocak1:XxYjRq7HxVbj1iXu@cluster-pcat.kzu62.mongodb.net/pcat-app-db?retryWrites=true&w=majority&appName=Cluster-pcat", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+  useUnifiedTopology: true
+}).then(() => {
+  console.log('MongoDB Atlas bağlantısı başarılı!');
+}).catch((err) => {
+  console.error('MongoDB Atlas bağlantı hatası:', err);
+});;
 
 //template engine
 app.set("view engine", "ejs");
